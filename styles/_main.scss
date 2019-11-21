@@ -27,8 +27,17 @@
     overflow: hidden;
 }
 %hover {
+    cursor: pointer;
     display: block;
     top: 0;
+}
+%circle {
+    position: absolute;
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+    background: #E75A7C;
+    opacity: 0.2;
 }
 .article-1 {
     .article-1__bg-logo {
@@ -151,16 +160,30 @@
         font-size: 50px;
         grid-area: title;
     }
-    .article-2__change-grid {
+    .article-2__change-grid {    
         grid-area: change;
     }
     .article-2__icon-1-grid {
-        background: url(../images/icon-1.png) no-repeat center;
-        grid-area: icon-1;
+        margin: 51px 176px;
+        grid-area: icon-1; 
+        .circle {
+            @extend %circle;
+        }
+        .img-svg-1 {
+            margin-top: 23px;
+            margin-left: -30px;
+        }
     }
     .article-2__icon-2-grid {
-        background: url(../images/icon-2.png) no-repeat center;
+        margin: 30px 129px;
         grid-area: icon-2;
+        .circle {
+            @extend %circle;
+        }
+        .img-svg-2 {
+            margin-top: 23px;
+            margin-left: 87px;
+        }
     }
     .article-2__maintaining-grid {
         grid-area: maintaining;
@@ -169,12 +192,26 @@
         grid-area: expertise;
     }
     .article-2__icon-3-grid {
-        background: url(../images/icon-3.png) no-repeat center;
+        margin: 51px 176px;
         grid-area: icon-3;
+        .circle {
+            @extend %circle;
+        }
+        .img-svg-3 {
+            margin-top: 23px;
+            margin-left: -30px;
+        }
     }
     .article-2__icon-4-grid {
-        background: url(../images/icon-4.png) no-repeat center;
+        margin: 30px 129px;
         grid-area: icon-4;
+        .circle {
+            @extend %circle;
+        }
+        .img-svg-4 {
+            margin-top: 23px;
+            margin-left: 90px;
+        }
     }
     .article-2__pragmatic-grid {
         grid-area: pragmatic;
@@ -183,8 +220,15 @@
         grid-area: corporate;
     }
     .article-2__icon-5-grid {
-        background: url(../images/icon-5.png) no-repeat center;
+        margin: 51px 176px;
         grid-area: icon-5;
+        .circle {
+            @extend %circle;
+        }
+        .img-svg-5 {
+            margin-top: 23px;
+            margin-left: -30px;
+        }
     }
     .article-2__feedback {
         display: flex;
@@ -218,7 +262,7 @@
         border-radius: 6px;
         color: #FFFFFF;
         &:hover {
-            background: #FA89A4;
+            cursor: pointer;
             box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 
                             0px 1px 7px rgba(0, 0, 0, 0.12), 
                             0px 3px 1px rgba(0, 0, 0, 0.2);

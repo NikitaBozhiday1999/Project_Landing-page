@@ -11,9 +11,9 @@
 </head>
 <body>
     <header class="header">
+        <div class="header__name"> Company Name </div>
         <nav class="header__navigation">
             <ul class="header__nav-list">
-                <li class="header__name"> Company Name </li>
                 <li class="header__nav-items">
                     <a href="#what-we-do" class="header__link"> What we do </a>
                 </li>
@@ -30,6 +30,9 @@
                     <a href="#contacts" class="header__link"> Contacts </a>
                 </li>
             </ul>
+            <div class="header__nav-mini header__nav--stick"></div>
+            <div class="header__nav-mini header__nav--stick"></div>
+            <div class="header__nav-mini header__nav--stick"></div>
         </nav>
     </header>
     <main>
@@ -85,8 +88,18 @@
                         numquam veniam, ut a debitis iusto sed.
                     </p>
                 </div>
-                <div class="article-2__icon-1-grid"></div>
-                <div class="article-2__icon-2-grid"></div>
+                <div class="article-2__icon-1-grid">
+                    <div class="circle"></div>
+                    <img src="./images/appointment 1.svg" 
+                         alt="error"
+                         class="img-svg-1">
+                </div>
+                <div class="article-2__icon-2-grid">
+                    <div class="circle"></div>
+                    <img src="./images//focus 1.svg" 
+                         alt="error"
+                         class="img-svg-2">
+                </div>
                 <div class="article-2__maintaining-grid">
                     <p class="article-2__title"> Maintaining the brand focus </p>
                     <p class="article-2__text">
@@ -105,8 +118,18 @@
                         numquam veniam, ut a debitis iusto sed.
                     </p>
                 </div>
-                <div class="article-2__icon-3-grid"></div>
-                <div class="article-2__icon-4-grid"></div>
+                <div class="article-2__icon-3-grid">
+                    <div class="circle"></div> 
+                    <img src="./images/skills 1.svg" 
+                         alt="error"
+                         class="img-svg-3">
+                </div>
+                <div class="article-2__icon-4-grid">
+                    <div class="circle"></div>
+                    <img src="./images/Vector.svg" 
+                         alt="error"
+                         class="img-svg-4">
+                </div>
                 <div class="article-2__pragmatic-grid">
                     <p class="article-2__title"> Pragmatic and proven methods </p>
                     <p class="article-2__text">
@@ -125,7 +148,12 @@
                         numquam veniam, ut a debitis iusto sed.
                     </p>
                 </div>
-                <div class="article-2__icon-5-grid"></div>
+                <div class="article-2__icon-5-grid">
+                    <div class="circle"></div>
+                    <img src="./images/conversation 1.svg" 
+                         alt="error"
+                         class="img-svg-5">
+                </div>
             </section>
             <section class="article-2__feedback">
                 <p class="article-2__title-feedback"> Have an idea? </p>
@@ -257,20 +285,20 @@
         </form>
         <div class="footer__adress">
         <p class="footer__our-text"> Our contacts </p>
-        <ul class="footer__list-info">
-            <li class="footer__office-text"> Office 1 </li>
-            <li class="footer__item-info"> Country </li>
-            <li class="footer__item-info"> City </li>
-            <li class="footer__item-info"> Street </li>
-            <li class="footer__item-info"> +9 (999) 999 99 99 </li>
-        </ul>
-        <ul class="footer__list-info">
-            <li class="footer__office-text"> Office 2 </li>
-            <li class="footer__item-info"> Country </li>
-            <li class="footer__item-info"> City </li>
-            <li class="footer__item-info"> Street </li>
-            <li class="footer__item-info"> +9 (999) 999 99 99 </li>
-        </ul>
+        <div class="footer__office-1">
+            <p class="footer__office-text">  Office 1 </p>
+            <p class="footer__item-info"> Country </p>
+            <p class="footer__item-info">  City </p>
+            <p class="footer__item-info"> Street </p>
+            <p class="footer__item-info">  +9 (999) 999 99 99 </p>
+        </div>
+        <div class="footer__office-2">
+            <p class="footer__office-text">  Office 2 </p> 
+            <p class="footer__item-info">  Country </p>
+            <p class="footer__item-info">  City </p>
+            <p class="footer__item-info">  Street </p>
+            <p class="footer__item-info">  +9 (999) 999 99 99 </p>
+        </div>
         </div>
     </footer>
 </body>

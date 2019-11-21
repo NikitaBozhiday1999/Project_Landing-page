@@ -1,0 +1,11 @@
+@media (min-width: 768px) and (max-width: 980px) {
+    .header__nav-items {
+        display: none;
+    }
+    .header__nav-mini {
+        display: block;
+        top: 0;
+        right: 0;
+
+    }
+}
