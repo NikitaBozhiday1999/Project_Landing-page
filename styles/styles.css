@@ -56,12 +56,116 @@
   text-decoration: underline;
 }
 .header .header__nav-mini {
-  display: block;
+  display: none;
   position: absolute;
   width: 35px;
   height: 2px;
   background: #ffffff;
-  border: 1px solid #FFFFFF;
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .header .header__nav-items {
+    display: none;
+  }
+  .header .header__nav-mini {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+  .header .header__nav--stick-1 {
+    margin-top: 21px;
+    margin-right: 20px;
+  }
+  .header .header__nav--stick-2 {
+    margin-top: 28px;
+    margin-right: 20px;
+  }
+  .header .header__nav--stick-3 {
+    margin-top: 35px;
+    margin-right: 20px;
+  }
+  .header .article-1__title {
+    margin-left: 332px;
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+  .header .article-1__text {
+    font-size: 20px;
+    width: 627px;
+  }
+  .header .article-1__stat-list {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .header .article-1__stat-text {
+    margin-top: 12px;
+    font-size: 20px;
+  }
+  .header .article-2__approach-grid {
+    margin-bottom: 112px;
+    margin-left: 108px;
+    margin-right: 108px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    grid-template-columns: repeat(3, 225px);
+    grid-template-rows: 171px repeat(5, 225px);
+    grid-template-areas: "title title ." "change change icon-1" "icon-2 maintaining maintaining" "expertise expertise icon-3" "icon-4 pragmatic pragmatic" "corporate corporate icon-5";
+    grid-gap: 40px;
+  }
+  .header .article-2__title-grid {
+    margin-bottom: 20px;
+  }
+  .header .article-2__icon-1-grid, .header .article-2__icon-3-grid, .header .article-2__icon-5-grid {
+    justify-self: center;
+  }
+  .header .article-2__text-feedback {
+    width: 833px;
+  }
+  .header .article-2__button-feedback {
+    width: 295px;
+  }
+  .header .article-3__technolologies-grid {
+    margin: 101px 94px 102px 122px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: 121px 40px 3px 250px 40px 3px 370px 40px 3px 240px;
+    grid-template-areas: "title title" "soft auto " "top-line top-line" "soft-text auto-text" "cloud devops" "bottom-line bottom-line" "cloud-text devops-text" "agile digital" "bottom-line-2 bottom-line-2" "agile-text digital-text";
+    grid-column-gap: 40px;
+  }
+  .header .article-3__bottom-line-3 {
+    grid-area: bottom-line-2;
+    background: #E75A7C;
+    border-radius: 3px;
+  }
+  .header .article-3__images-grid {
+    padding: 64px 30px;
+    background: #F2F3F7;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-template-columns: repeat(3, 295px);
+    grid-template-rows: auto repeat(2, 361px);
+    grid-template-areas: "projects . ." "icon-1 icon-2 icon-3" "icon-4 icon-5 icon-6";
+    grid-gap: 18px;
+  }
+  .header .article-3__title-projects {
+    margin-bottom: 16px;
+    font-size: 48px;
+  }
+  .header .article-3__descr-title {
+    padding: 295px 23px 3px;
+  }
 }
 
 .article-3 .article-3__software, .article-3 .article-3__auto, .article-3 .article-3__cloud, .article-3 .article-3__devops, .article-3 .article-3__agile, .article-3 .article-3__digital {
@@ -231,10 +335,221 @@
   color: #FFFFFF;
 }
 .article-1 .article-1__stat-list .article-1__stat-text {
+  margin-top: 18px;
   font-weight: normal;
   list-style-type: none;
   font-size: 24px;
   color: #FFFFFF;
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .article-1 .article-1__stat-list .header__nav-items {
+    display: none;
+  }
+  .article-1 .article-1__stat-list .header__nav-mini {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+  .article-1 .article-1__stat-list .header__nav--stick-1 {
+    margin-top: 21px;
+    margin-right: 20px;
+  }
+  .article-1 .article-1__stat-list .header__nav--stick-2 {
+    margin-top: 28px;
+    margin-right: 20px;
+  }
+  .article-1 .article-1__stat-list .header__nav--stick-3 {
+    margin-top: 35px;
+    margin-right: 20px;
+  }
+  .article-1 .article-1__stat-list .article-1__title {
+    margin-left: 332px;
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+  .article-1 .article-1__stat-list .article-1__text {
+    font-size: 20px;
+    width: 627px;
+  }
+  .article-1 .article-1__stat-list .article-1__stat-list {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .article-1 .article-1__stat-list .article-1__stat-text {
+    margin-top: 12px;
+    font-size: 20px;
+  }
+  .article-1 .article-1__stat-list .article-2__approach-grid {
+    margin-bottom: 112px;
+    margin-left: 108px;
+    margin-right: 108px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    grid-template-columns: repeat(3, 225px);
+    grid-template-rows: 171px repeat(5, 225px);
+    grid-template-areas: "title title ." "change change icon-1" "icon-2 maintaining maintaining" "expertise expertise icon-3" "icon-4 pragmatic pragmatic" "corporate corporate icon-5";
+    grid-gap: 40px;
+  }
+  .article-1 .article-1__stat-list .article-2__title-grid {
+    margin-bottom: 20px;
+  }
+  .article-1 .article-1__stat-list .article-2__icon-1-grid, .article-1 .article-1__stat-list .article-2__icon-3-grid, .article-1 .article-1__stat-list .article-2__icon-5-grid {
+    justify-self: center;
+  }
+  .article-1 .article-1__stat-list .article-2__text-feedback {
+    width: 833px;
+  }
+  .article-1 .article-1__stat-list .article-2__button-feedback {
+    width: 295px;
+  }
+  .article-1 .article-1__stat-list .article-3__technolologies-grid {
+    margin: 101px 94px 102px 122px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: 121px 40px 3px 250px 40px 3px 370px 40px 3px 240px;
+    grid-template-areas: "title title" "soft auto " "top-line top-line" "soft-text auto-text" "cloud devops" "bottom-line bottom-line" "cloud-text devops-text" "agile digital" "bottom-line-2 bottom-line-2" "agile-text digital-text";
+    grid-column-gap: 40px;
+  }
+  .article-1 .article-1__stat-list .article-3__bottom-line-3 {
+    grid-area: bottom-line-2;
+    background: #E75A7C;
+    border-radius: 3px;
+  }
+  .article-1 .article-1__stat-list .article-3__images-grid {
+    padding: 64px 30px;
+    background: #F2F3F7;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-template-columns: repeat(3, 295px);
+    grid-template-rows: auto repeat(2, 361px);
+    grid-template-areas: "projects . ." "icon-1 icon-2 icon-3" "icon-4 icon-5 icon-6";
+    grid-gap: 18px;
+  }
+  .article-1 .article-1__stat-list .article-3__title-projects {
+    margin-bottom: 16px;
+    font-size: 48px;
+  }
+  .article-1 .article-1__stat-list .article-3__descr-title {
+    padding: 295px 23px 3px;
+  }
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .article-1 .header__nav-items {
+    display: none;
+  }
+  .article-1 .header__nav-mini {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+  .article-1 .header__nav--stick-1 {
+    margin-top: 21px;
+    margin-right: 20px;
+  }
+  .article-1 .header__nav--stick-2 {
+    margin-top: 28px;
+    margin-right: 20px;
+  }
+  .article-1 .header__nav--stick-3 {
+    margin-top: 35px;
+    margin-right: 20px;
+  }
+  .article-1 .article-1__title {
+    margin-left: 332px;
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+  .article-1 .article-1__text {
+    font-size: 20px;
+    width: 627px;
+  }
+  .article-1 .article-1__stat-list {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .article-1 .article-1__stat-text {
+    margin-top: 12px;
+    font-size: 20px;
+  }
+  .article-1 .article-2__approach-grid {
+    margin-bottom: 112px;
+    margin-left: 108px;
+    margin-right: 108px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    grid-template-columns: repeat(3, 225px);
+    grid-template-rows: 171px repeat(5, 225px);
+    grid-template-areas: "title title ." "change change icon-1" "icon-2 maintaining maintaining" "expertise expertise icon-3" "icon-4 pragmatic pragmatic" "corporate corporate icon-5";
+    grid-gap: 40px;
+  }
+  .article-1 .article-2__title-grid {
+    margin-bottom: 20px;
+  }
+  .article-1 .article-2__icon-1-grid, .article-1 .article-2__icon-3-grid, .article-1 .article-2__icon-5-grid {
+    justify-self: center;
+  }
+  .article-1 .article-2__text-feedback {
+    width: 833px;
+  }
+  .article-1 .article-2__button-feedback {
+    width: 295px;
+  }
+  .article-1 .article-3__technolologies-grid {
+    margin: 101px 94px 102px 122px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: 121px 40px 3px 250px 40px 3px 370px 40px 3px 240px;
+    grid-template-areas: "title title" "soft auto " "top-line top-line" "soft-text auto-text" "cloud devops" "bottom-line bottom-line" "cloud-text devops-text" "agile digital" "bottom-line-2 bottom-line-2" "agile-text digital-text";
+    grid-column-gap: 40px;
+  }
+  .article-1 .article-3__bottom-line-3 {
+    grid-area: bottom-line-2;
+    background: #E75A7C;
+    border-radius: 3px;
+  }
+  .article-1 .article-3__images-grid {
+    padding: 64px 30px;
+    background: #F2F3F7;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-template-columns: repeat(3, 295px);
+    grid-template-rows: auto repeat(2, 361px);
+    grid-template-areas: "projects . ." "icon-1 icon-2 icon-3" "icon-4 icon-5 icon-6";
+    grid-gap: 18px;
+  }
+  .article-1 .article-3__title-projects {
+    margin-bottom: 16px;
+    font-size: 48px;
+  }
+  .article-1 .article-3__descr-title {
+    padding: 295px 23px 3px;
+  }
 }
 
 .article-2 .article-2__approach-grid {
@@ -245,6 +560,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   grid-template-columns: repeat(2, 460px);
   grid-template-rows: 190px repeat(5, 220px);
@@ -260,13 +579,13 @@
   font-size: 24px;
 }
 .article-2 .article-2__title-grid {
+  margin-bottom: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-bottom: 47px;
+  -ms-flex-item-align: end;
+      align-self: end;
+  justify-self: flex-start;
   font-weight: bold;
   font-size: 50px;
   grid-area: title;
@@ -275,7 +594,6 @@
   grid-area: change;
 }
 .article-2 .article-2__icon-1-grid {
-  margin: 51px 176px;
   grid-area: icon-1;
 }
 .article-2 .article-2__icon-1-grid .img-svg-1 {
@@ -283,7 +601,6 @@
   margin-left: -30px;
 }
 .article-2 .article-2__icon-2-grid {
-  margin: 30px 129px;
   grid-area: icon-2;
 }
 .article-2 .article-2__icon-2-grid .img-svg-2 {
@@ -297,7 +614,6 @@
   grid-area: expertise;
 }
 .article-2 .article-2__icon-3-grid {
-  margin: 51px 176px;
   grid-area: icon-3;
 }
 .article-2 .article-2__icon-3-grid .img-svg-3 {
@@ -305,7 +621,6 @@
   margin-left: -30px;
 }
 .article-2 .article-2__icon-4-grid {
-  margin: 30px 129px;
   grid-area: icon-4;
 }
 .article-2 .article-2__icon-4-grid .img-svg-4 {
@@ -319,7 +634,6 @@
   grid-area: corporate;
 }
 .article-2 .article-2__icon-5-grid {
-  margin: 51px 176px;
   grid-area: icon-5;
 }
 .article-2 .article-2__icon-5-grid .img-svg-5 {
@@ -382,6 +696,111 @@
   border: none;
   -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.14), 0px 1px 7px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .article-2 .header__nav-items {
+    display: none;
+  }
+  .article-2 .header__nav-mini {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+  .article-2 .header__nav--stick-1 {
+    margin-top: 21px;
+    margin-right: 20px;
+  }
+  .article-2 .header__nav--stick-2 {
+    margin-top: 28px;
+    margin-right: 20px;
+  }
+  .article-2 .header__nav--stick-3 {
+    margin-top: 35px;
+    margin-right: 20px;
+  }
+  .article-2 .article-1__title {
+    margin-left: 332px;
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+  .article-2 .article-1__text {
+    font-size: 20px;
+    width: 627px;
+  }
+  .article-2 .article-1__stat-list {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .article-2 .article-1__stat-text {
+    margin-top: 12px;
+    font-size: 20px;
+  }
+  .article-2 .article-2__approach-grid {
+    margin-bottom: 112px;
+    margin-left: 108px;
+    margin-right: 108px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    grid-template-columns: repeat(3, 225px);
+    grid-template-rows: 171px repeat(5, 225px);
+    grid-template-areas: "title title ." "change change icon-1" "icon-2 maintaining maintaining" "expertise expertise icon-3" "icon-4 pragmatic pragmatic" "corporate corporate icon-5";
+    grid-gap: 40px;
+  }
+  .article-2 .article-2__title-grid {
+    margin-bottom: 20px;
+  }
+  .article-2 .article-2__icon-1-grid, .article-2 .article-2__icon-3-grid, .article-2 .article-2__icon-5-grid {
+    justify-self: center;
+  }
+  .article-2 .article-2__text-feedback {
+    width: 833px;
+  }
+  .article-2 .article-2__button-feedback {
+    width: 295px;
+  }
+  .article-2 .article-3__technolologies-grid {
+    margin: 101px 94px 102px 122px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: 121px 40px 3px 250px 40px 3px 370px 40px 3px 240px;
+    grid-template-areas: "title title" "soft auto " "top-line top-line" "soft-text auto-text" "cloud devops" "bottom-line bottom-line" "cloud-text devops-text" "agile digital" "bottom-line-2 bottom-line-2" "agile-text digital-text";
+    grid-column-gap: 40px;
+  }
+  .article-2 .article-3__bottom-line-3 {
+    grid-area: bottom-line-2;
+    background: #E75A7C;
+    border-radius: 3px;
+  }
+  .article-2 .article-3__images-grid {
+    padding: 64px 30px;
+    background: #F2F3F7;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-template-columns: repeat(3, 295px);
+    grid-template-rows: auto repeat(2, 361px);
+    grid-template-areas: "projects . ." "icon-1 icon-2 icon-3" "icon-4 icon-5 icon-6";
+    grid-gap: 18px;
+  }
+  .article-2 .article-3__title-projects {
+    margin-bottom: 16px;
+    font-size: 48px;
+  }
+  .article-2 .article-3__descr-title {
+    padding: 295px 23px 3px;
+  }
 }
 
 .article-3 .article-3__technolologies-grid {
@@ -504,6 +923,111 @@
   font-size: 16px;
   margin: 4px 24px 0;
 }
+@media (min-width: 768px) and (max-width: 980px) {
+  .article-3 .header__nav-items {
+    display: none;
+  }
+  .article-3 .header__nav-mini {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+  .article-3 .header__nav--stick-1 {
+    margin-top: 21px;
+    margin-right: 20px;
+  }
+  .article-3 .header__nav--stick-2 {
+    margin-top: 28px;
+    margin-right: 20px;
+  }
+  .article-3 .header__nav--stick-3 {
+    margin-top: 35px;
+    margin-right: 20px;
+  }
+  .article-3 .article-1__title {
+    margin-left: 332px;
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+  .article-3 .article-1__text {
+    font-size: 20px;
+    width: 627px;
+  }
+  .article-3 .article-1__stat-list {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .article-3 .article-1__stat-text {
+    margin-top: 12px;
+    font-size: 20px;
+  }
+  .article-3 .article-2__approach-grid {
+    margin-bottom: 112px;
+    margin-left: 108px;
+    margin-right: 108px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    grid-template-columns: repeat(3, 225px);
+    grid-template-rows: 171px repeat(5, 225px);
+    grid-template-areas: "title title ." "change change icon-1" "icon-2 maintaining maintaining" "expertise expertise icon-3" "icon-4 pragmatic pragmatic" "corporate corporate icon-5";
+    grid-gap: 40px;
+  }
+  .article-3 .article-2__title-grid {
+    margin-bottom: 20px;
+  }
+  .article-3 .article-2__icon-1-grid, .article-3 .article-2__icon-3-grid, .article-3 .article-2__icon-5-grid {
+    justify-self: center;
+  }
+  .article-3 .article-2__text-feedback {
+    width: 833px;
+  }
+  .article-3 .article-2__button-feedback {
+    width: 295px;
+  }
+  .article-3 .article-3__technolologies-grid {
+    margin: 101px 94px 102px 122px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: 121px 40px 3px 250px 40px 3px 370px 40px 3px 240px;
+    grid-template-areas: "title title" "soft auto " "top-line top-line" "soft-text auto-text" "cloud devops" "bottom-line bottom-line" "cloud-text devops-text" "agile digital" "bottom-line-2 bottom-line-2" "agile-text digital-text";
+    grid-column-gap: 40px;
+  }
+  .article-3 .article-3__bottom-line-3 {
+    grid-area: bottom-line-2;
+    background: #E75A7C;
+    border-radius: 3px;
+  }
+  .article-3 .article-3__images-grid {
+    padding: 64px 30px;
+    background: #F2F3F7;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-template-columns: repeat(3, 295px);
+    grid-template-rows: auto repeat(2, 361px);
+    grid-template-areas: "projects . ." "icon-1 icon-2 icon-3" "icon-4 icon-5 icon-6";
+    grid-gap: 18px;
+  }
+  .article-3 .article-3__title-projects {
+    margin-bottom: 16px;
+    font-size: 48px;
+  }
+  .article-3 .article-3__descr-title {
+    padding: 295px 23px 3px;
+  }
+}
 
 .footer {
   width: 100%;
@@ -616,5 +1140,117 @@
     display: block;
     top: 0;
     right: 0;
+  }
+
+  .header__nav--stick-1 {
+    margin-top: 21px;
+    margin-right: 20px;
+  }
+
+  .header__nav--stick-2 {
+    margin-top: 28px;
+    margin-right: 20px;
+  }
+
+  .header__nav--stick-3 {
+    margin-top: 35px;
+    margin-right: 20px;
+  }
+
+  .article-1__title {
+    margin-left: 332px;
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+
+  .article-1__text {
+    font-size: 20px;
+    width: 627px;
+  }
+
+  .article-1__stat-list {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .article-1__stat-text {
+    margin-top: 12px;
+    font-size: 20px;
+  }
+
+  .article-2__approach-grid {
+    margin-bottom: 112px;
+    margin-left: 108px;
+    margin-right: 108px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    grid-template-columns: repeat(3, 225px);
+    grid-template-rows: 171px repeat(5, 225px);
+    grid-template-areas: "title title ." "change change icon-1" "icon-2 maintaining maintaining" "expertise expertise icon-3" "icon-4 pragmatic pragmatic" "corporate corporate icon-5";
+    grid-gap: 40px;
+  }
+
+  .article-2__title-grid {
+    margin-bottom: 20px;
+  }
+
+  .article-2__icon-1-grid, .article-2__icon-3-grid, .article-2__icon-5-grid {
+    justify-self: center;
+  }
+
+  .article-2__text-feedback {
+    width: 833px;
+  }
+
+  .article-2__button-feedback {
+    width: 295px;
+  }
+
+  .article-3__technolologies-grid {
+    margin: 101px 94px 102px 122px;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: 121px 40px 3px 250px 40px 3px 370px 40px 3px 240px;
+    grid-template-areas: "title title" "soft auto " "top-line top-line" "soft-text auto-text" "cloud devops" "bottom-line bottom-line" "cloud-text devops-text" "agile digital" "bottom-line-2 bottom-line-2" "agile-text digital-text";
+    grid-column-gap: 40px;
+  }
+
+  .article-3__bottom-line-3 {
+    grid-area: bottom-line-2;
+    background: #E75A7C;
+    border-radius: 3px;
+  }
+
+  .article-3__images-grid {
+    padding: 64px 30px;
+    background: #F2F3F7;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-template-columns: repeat(3, 295px);
+    grid-template-rows: auto repeat(2, 361px);
+    grid-template-areas: "projects . ." "icon-1 icon-2 icon-3" "icon-4 icon-5 icon-6";
+    grid-gap: 18px;
+  }
+
+  .article-3__title-projects {
+    margin-bottom: 16px;
+    font-size: 48px;
+  }
+
+  .article-3__descr-title {
+    padding: 295px 23px 3px;
   }
 }

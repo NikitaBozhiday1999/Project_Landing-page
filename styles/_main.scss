@@ -119,12 +119,15 @@
             color: #FFFFFF;
         }
         .article-1__stat-text {
-        font-weight: normal;
-        list-style-type: none;
-        font-size: 24px;
-        color: #FFFFFF;
-        }
+            margin-top: 18px;
+            font-weight: normal;
+            list-style-type: none;
+            font-size: 24px;
+            color: #FFFFFF;
+        } 
+        @import 'media';
     }
+    @import 'media';
 }
 .article-2 {
     .article-2__approach-grid {
@@ -133,6 +136,8 @@
         margin-right: 240px;
         display: grid;
         justify-content: center;
+        justify-items: center;
+        align-items: center;
         height: 100%;
         grid-template-columns: repeat(2, 460px);
         grid-template-rows: 190px repeat(5, 220px);
@@ -152,10 +157,11 @@
             font-size: 24px;
         }
     }
-    .article-2__title-grid {
+    .article-2__title-grid { 
+        margin-bottom: 7px;
         display: flex;
-        align-items: flex-end;
-        margin-bottom: 47px;
+        align-self: end;
+        justify-self: flex-start;
         font-weight: bold;
         font-size: 50px;
         grid-area: title;
@@ -164,7 +170,6 @@
         grid-area: change;
     }
     .article-2__icon-1-grid {
-        margin: 51px 176px;
         grid-area: icon-1; 
         .circle {
             @extend %circle;
@@ -175,7 +180,6 @@
         }
     }
     .article-2__icon-2-grid {
-        margin: 30px 129px;
         grid-area: icon-2;
         .circle {
             @extend %circle;
@@ -192,7 +196,6 @@
         grid-area: expertise;
     }
     .article-2__icon-3-grid {
-        margin: 51px 176px;
         grid-area: icon-3;
         .circle {
             @extend %circle;
@@ -203,7 +206,6 @@
         }
     }
     .article-2__icon-4-grid {
-        margin: 30px 129px;
         grid-area: icon-4;
         .circle {
             @extend %circle;
@@ -220,7 +222,6 @@
         grid-area: corporate;
     }
     .article-2__icon-5-grid {
-        margin: 51px 176px;
         grid-area: icon-5;
         .circle {
             @extend %circle;
@@ -281,6 +282,7 @@
                             0px 3px 1px rgba(0, 0, 0, 0.2);
         }
     }
+    @import 'media';
 }
 .article-3 {
     .article-3__technolologies-grid {
@@ -447,5 +449,5 @@
         font-size: 16px;
         margin: 4px 24px 0;
     }
+    @import 'media';
 }
-

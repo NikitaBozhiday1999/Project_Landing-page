@@ -42,12 +42,13 @@
         }
     } 
     .header__nav-mini {
-        display: block;
+        display: none;
         position: absolute;
         width: 35px;
         height: 2px;
         background: #ffffff;
-        border: 1px solid #FFFFFF;
     }
-}
+    @import 'media';
+ }
+
 
