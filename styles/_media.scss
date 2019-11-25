@@ -28,11 +28,20 @@
         font-size: 20px;
         width: 627px;
     }
+    .article-1__statistic {
+        height: 234px;
+    }
     .article-1__stat-list {
+        padding-top: 73px;
         font-size: 36px;
         line-height: 45px;
     }
-    .article-1__stat-text {
+    .article-1__stat-numb-1, .article-1__stat-numb-2, 
+    .article-1__stat-numb-3, .article-1__stat-numb-4 {
+        font-size: 34px;
+    }
+    .article-1__stat-text-1, .article-1__stat-text-2, 
+    .article-1__stat-text-3, .article-1__stat-text-4 {
         margin-top: 12px;
         font-size: 20px;
     }
@@ -55,7 +64,17 @@
                              "corporate corporate icon-5";
         grid-gap: 40px;
     } 
+    .article-3__software, .article-3__auto, .article-3__cloud, .article-3__devops,
+    .article-3__agile, .article-3__digital {
+        font-size: 20px;
+    }
+    .article-3__soft-text, .article-3__auto-text, .article-3__cloud-text,
+    .article-3__first-text-devops, .article-3__second-text-devops, 
+    .article-3__agile-text, .article-3__digital-text {
+        font-size: 20px;
+    }
     .article-2__title-grid {
+        font-size: 48px;
         margin-bottom: 20px;
     }
     .article-2__icon-1-grid, .article-2__icon-3-grid, .article-2__icon-5-grid {
@@ -65,6 +84,7 @@
         width: 833px;
     }
     .article-2__button-feedback {
+        margin-top: 46px;
         width: 295px;
     }
     .article-3__technolologies-grid {
@@ -85,6 +105,9 @@
                              "bottom-line-2 bottom-line-2"
                              "agile-text digital-text";
         grid-column-gap: 40px;
+    }
+    .article-3__tech-title {
+        font-size: 48px;
     }
     .article-3__bottom-line-3 {
         grid-area: bottom-line-2;
@@ -111,3 +134,161 @@
         padding: 295px 23px 3px;
     }
 } 
+@media (min-width: 500px) and (max-width: 768px) {
+    .header__nav-items {
+        display: none;
+    }
+    .header__nav-mini {
+        display: block;
+        top: 0;
+        right: 0;
+    }
+    .header__nav--stick-1 {
+        margin-top: 21px;
+        margin-right: 20px;
+    }
+    .header__nav--stick-2 {
+        margin-top: 28px;
+        margin-right: 20px;
+    }
+    .header__nav--stick-3 {
+        margin-top: 35px;
+        margin-right: 20px;
+    }
+    .article-1__logo-title {
+        margin-bottom: 160px;
+        font-size: 32px;
+    }
+    .article-1__logo-text {
+        font-size: 20px;
+        width: 529px;
+        height: 74px;
+    }
+    .article-1__title {
+        margin-top: 39px;
+        margin-bottom: 18px;
+        margin-left: 355px;
+        font-size: 36px;
+    }
+    .article-1__text {
+        width: 610px;
+        font-size: 20px;
+    }
+    .article-1__statistic {
+        height: 343px;
+    }
+    .article-1__stat-list {
+        padding: 50px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas: "seven-plus five-plus" 
+                             "dolor three-plus";
+        font-size: 36px;
+        line-height: 45px;
+        grid-gap: 40px 140px;
+    }
+    .article-1__stat-numb-1, .article-1__stat-numb-2, 
+    .article-1__stat-numb-3, .article-1__stat-numb-4 {
+        font-weight: 900;
+        font-size: 34px;
+    }
+    .article-1__stat-text-1, .article-1__stat-text-2, 
+    .article-1__stat-text-3, .article-1__stat-text-4 {
+        margin-top: 12px;
+        font-size: 20px;
+    }
+    .article-2__approach-grid {
+        margin-bottom: 66px;
+        margin-left: 90px;
+        margin-right: 90px;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(1, 570px);
+        grid-template-rows: 111px repeat(10, 170px);
+        grid-template-areas: "title"
+                             "icon-1"
+                             "change"
+                             "icon-2"
+                             "maintaining"
+                             "icon-3"
+                             "expertise"
+                             "icon-4"
+                             "pragmatic"
+                             "icon-5"
+                             "corporate";
+        grid-gap: 40px;
+        .article-2__title{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        .article-2__text {
+            font-size: 20px;
+        }
+        .article-2__title-grid { 
+            margin-bottom: 0;
+            font-size: 36px;
+        }
+    }
+    .article-2__text-feedback {
+        width: 589px;
+        font-size: 20px;
+    }
+    .article-2__button-feedback {
+        width: 225px;
+    }
+    .article-3__technolologies-grid {
+        margin: 72px 73px 72px 87px;
+        display: grid;
+        justify-content: center;
+        height: 100%;
+        grid-template-columns: repeat(2, 282px);
+        grid-template-rows: 121px 40px 3px 250px 40px 3px 360px 40px 3px 240px;
+        grid-template-areas: "title title"
+                             "soft auto "
+                             "top-line top-line"
+                             "soft-text auto-text"
+                             "cloud devops"
+                             "bottom-line bottom-line"
+                             "cloud-text devops-text"
+                             "agile digital"
+                             "bottom-line-2 bottom-line-2"
+                             "agile-text digital-text";
+        grid-column-gap: 40px;
+    }
+    .article-3__bottom-line-3 {
+        grid-area: bottom-line-2;
+        background: #E75A7C;
+        border-radius: 3px;
+    }
+    .article-3__tech-title {
+        font-size: 48px;
+    }
+    .article-3__software, .article-3__auto, .article-3__cloud, .article-3__devops,
+    .article-3__agile, .article-3__digital {
+        font-size: 20px;
+    }
+    .article-3__soft-text, .article-3__auto-text, .article-3__cloud-text,
+    .article-3__first-text-devops, .article-3__second-text-devops, 
+    .article-3__agile-text, .article-3__digital-text {
+        font-size: 20px;
+    }
+    .article-3__images-grid {
+        padding: 72px 88px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 285px);
+        grid-template-rows: auto repeat(3, 350px);
+        grid-template-areas: "projects ."
+                             "icon-1 icon-2"
+                             "icon-3 icon-4"
+                             "icon-5 icon-6";
+        grid-gap: 18px;
+    }
+    .article-3__title-projects {
+        margin-bottom: 16px;
+        font-size: 48px;
+    }
+}

@@ -32,7 +32,7 @@
     top: 0;
 }
 %circle {
-    position: absolute;
+    position: relative;
     width: 133px;
     height: 133px;
     border-radius: 50%;
@@ -72,6 +72,7 @@
             position: absolute;
             opacity: 0.8;
         }
+        @import 'media';
     }
     .article-1__paragraph {
         display: flex;
@@ -98,35 +99,76 @@
         color: #3B424A;
     }
     .article-1__statistic {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         height: 277px;
         background: #4D636F;
     }
     .article-1__stat-list {
-        margin-bottom: 18px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+        text-align: center;
+        padding-top: 84px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4, auto);
+        grid-template-areas: "seven-plus five-plus dolor three-plus";
         list-style-type: none;
+    
+    }
+    .article-1__stat-numb-1, .article-1__stat-numb-2, 
+    .article-1__stat-numb-3, .article-1__stat-numb-4 {
         color: #FFFFFF;
         font-weight: 900;
         font-size: 50px;
-        text-align: center;
-        .article-1__stat-numb {
-            color: #FFFFFF;
-        }
-        .article-1__stat-text {
-            margin-top: 18px;
-            font-weight: normal;
-            list-style-type: none;
-            font-size: 24px;
-            color: #FFFFFF;
-        } 
-        @import 'media';
     }
+    .article-1__stat-text-1, .article-1__stat-text-2, 
+    .article-1__stat-text-3, .article-1__stat-text-4 {
+        margin-top: 18px;
+        font-weight: normal;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    .article-1__stat-numb-1 {
+        grid-area: seven-plus; 
+    }
+    .article-1__stat-numb-2 {
+        grid-area: five-plus;
+    }
+    .article-1__stat-numb-3 {
+        grid-area: dolor;
+    }
+    .article-1__stat-numb-4 {
+        grid-area: three-plus;
+    }
+    // .article-1__statistic {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     height: 277px;
+    //     background: #4D636F;
+    // }
+    // .article-1__stat-list {
+    //     margin-bottom: 18px;
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    //     align-items: center;
+    //     list-style-type: none;
+    //     color: #FFFFFF;
+    //     font-weight: 900;
+    //     font-size: 50px;
+    //     text-align: center;
+    //     .article-1__stat-numb {
+    //         color: #FFFFFF;
+    //     }
+    //     .article-1__stat-text {
+    //         margin-top: 18px;
+    //         font-weight: normal;
+    //         list-style-type: none;
+    //         font-size: 24px;
+    //         color: #FFFFFF;
+    //     } 
+    //     @import 'media';
+    // }
     @import 'media';
 }
 .article-2 {
@@ -175,8 +217,9 @@
             @extend %circle;
         }
         .img-svg-1 {
-            margin-top: 23px;
-            margin-left: -30px;
+            position: absolute;
+            margin-left: -31px;
+            margin-top: -108px;
         }
     }
     .article-2__icon-2-grid {
@@ -185,8 +228,9 @@
             @extend %circle;
         }
         .img-svg-2 {
-            margin-top: 23px;
-            margin-left: 87px;
+            position: absolute;
+            margin-left: 88px;
+            margin-top: -104px;
         }
     }
     .article-2__maintaining-grid {
@@ -201,8 +245,9 @@
             @extend %circle;
         }
         .img-svg-3 {
-            margin-top: 23px;
-            margin-left: -30px;
+            position: absolute;
+            margin-left: -31px;
+            margin-top: -108px;
         }
     }
     .article-2__icon-4-grid {
@@ -211,8 +256,9 @@
             @extend %circle;
         }
         .img-svg-4 {
-            margin-top: 23px;
-            margin-left: 90px;
+            position: absolute;
+            margin-left: 88px;
+            margin-top: -104px;
         }
     }
     .article-2__pragmatic-grid {
@@ -227,8 +273,9 @@
             @extend %circle;
         }
         .img-svg-5 {
-            margin-top: 23px;
-            margin-left: -30px;
+            position: absolute;
+            margin-left: -31px;
+            margin-top: -108px;
         }
     }
     .article-2__feedback {
@@ -281,6 +328,7 @@
                             0px 1px 7px rgba(0, 0, 0, 0.12), 
                             0px 3px 1px rgba(0, 0, 0, 0.2);
         }
+        @import "media";
     }
     @import 'media';
 }
@@ -305,6 +353,7 @@
         grid-area: title;
         font-weight: bold;
         font-size: 50px;
+        color: #2C2F3C;
     }
     .article-3__software {
         @extend %flex;
