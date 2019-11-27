@@ -133,6 +133,9 @@
     .article-3__descr-title {
         padding: 295px 23px 3px;
     }
+    .footer {
+        grid-column-gap: 100px;
+    }
 } 
 @media (min-width: 500px) and (max-width: 768px) {
     .header__nav-items {
@@ -290,5 +293,276 @@
     .article-3__title-projects {
         margin-bottom: 16px;
         font-size: 48px;
+    }
+    .footer {
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 524px;
+        grid-template-rows: 622px;
+        grid-template-areas: "form" 
+                             "adress";
+    }
+    .footer__adress {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer__our-text {
+        margin-bottom: 31px;
+    }
+    .footer__office-1 {
+        width: 240px;
+    }
+    .footer__office-2 {
+        margin-left: 63px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 500px) {
+    %circle {
+        position: relative;
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        background: #E75A7C;
+        opacity: 0.2;
+    }
+    .header__nav-items {
+        display: none;
+    }
+    .header__nav-mini {
+        display: block;
+        top: 0;
+        right: 0;
+    }
+    .header__nav--stick-1 {
+        margin-top: 21px;
+        margin-right: 20px;
+    }
+    .header__nav--stick-2 {
+        margin-top: 28px;
+        margin-right: 20px;
+    }
+    .header__nav--stick-3 {
+        margin-top: 35px;
+        margin-right: 20px;
+    }
+    .article-1__logo-title {
+        font-size: 24px;
+    }
+    .article-1__logo-text {
+        width: 345px;
+        font-size: 16px;
+    }
+    .article-1__title {
+        margin: 53px 0 0 640px;
+        font-size: 24px;
+    }
+    .article-1__text {
+        margin: 15px 37px 54px;
+        font-size: 14px;
+        line-height: 26px;
+        width: 320px;
+    }
+    .article-1__statistic {
+        height: 623px;
+    }
+    .article-1__stat-list {
+        padding: 50px;
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 100px;
+        grid-template-columns: 150px;
+        grid-template-areas: "seven-plus" 
+                             "five-plus" 
+                             "dolor" 
+                             "three-plus";
+        font-size: 36px;
+        line-height: 45px;
+        grid-gap: 30px;
+    }
+    .article-1__stat-numb-1, .article-1__stat-numb-2, 
+    .article-1__stat-numb-3, .article-1__stat-numb-4 {
+        font-size: 30px;
+    }
+    .article-1__stat-text-1, .article-1__stat-text-2, 
+    .article-1__stat-text-3, .article-1__stat-text-4 {
+        font-size: 18px;
+    }
+    .article-2__approach-grid {
+        margin-bottom: 48px;
+        margin-left: 45px;
+        margin-right: 45px;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: 286px;
+        grid-template-rows: 78px repeat(10, 150px);
+        grid-template-areas: "title"
+                             "icon-1"
+                             "change"
+                             "icon-2"
+                             "maintaining"
+                             "icon-3"
+                             "expertise"
+                             "icon-4"
+                             "pragmatic"
+                             "icon-5"
+                             "corporate";
+        grid-gap: 0px;
+        .article-2__title{
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        .article-2__text {
+            font-size: 14px;
+        }
+        .article-2__title-grid { 
+            margin-bottom: 0;
+            font-size: 24px;
+        }
+    }
+    .article-2__img-svg-1, .article-2__img-svg-2, .article-2__img-svg-3,
+    .article-2__img-svg-4, .article-2__img-svg-5 {
+        width: 50px;
+    } 
+    .article-2__img-svg-1, .article-2__img-svg-3, .article-2__img-svg-5 {
+        margin-left: -20px;
+        margin-top: -70px;
+    }
+    .article-2__img-svg-2, .article-2__img-svg-4 {
+        margin-left: 56px;
+        margin-top: -68px;
+    }
+    .article-2__feedback {
+        height: 375px;
+    }
+    .article-2__title-feedback {
+        margin-bottom: 18px;
+        font-size: 24px;
+    }
+    .article-2__text-feedback {
+        width: 286px;
+        font-size: 18px;
+    }
+    .article-2__button-feedback {
+        margin-top: 18px;
+        width: 228px;
+        height: 42px;
+        font-size: 16px;
+    }
+    .article-3__technolologies-grid {
+        margin: 36px 45px 38px 42px;
+        display: grid;
+        justify-content: center;
+        height: 100%;
+        grid-template-columns: 285px;
+        grid-template-rows: 66px 40px 3px 96px 40px 3px 114px 40px 3px 114px
+                            40px 3px 232px 40px 3px 148px 40px 3px 60px;
+        grid-template-areas: "title"
+                             "soft" 
+                             "top-line"
+                             "soft-text"
+                             "auto "
+                             "bottom-line"
+                             "auto-text"
+                             "cloud" 
+                             "bottom-line-3"
+                             "cloud-text"
+                             "devops"
+                             "bottom-line-4"
+                             "devops-text"
+                             "agile" 
+                             "bottom-line-5"
+                             "agile-text"
+                             "digital"
+                             "bottom-line-6"
+                             "digital-text";
+    }
+    .article-3__bottom-line-3 {
+        grid-area: bottom-line-3;
+        background: #E75A7C;
+        border-radius: 3px;
+    }
+    .article-3__bottom-line-4, .article-3__bottom-line-5, .article-3__bottom-line-6 {
+        background: #E75A7C;
+        border-radius: 3px;
+    }
+    .article-3__bottom-line-4 {
+        grid-area: bottom-line-4;
+    }
+    .article-3__bottom-line-5 {
+        grid-area: bottom-line-5;
+    }
+    .article-3__bottom-line-6 {
+        grid-area: bottom-line-6;
+    }
+    .article-3__tech-title {
+        margin-bottom: 32px;
+        font-size: 28px;
+    }
+    .article-3__software, .article-3__auto, .article-3__cloud, .article-3__devops,
+    .article-3__agile, .article-3__digital {
+        font-size: 18px;
+    }
+    .article-3__soft-text, .article-3__auto-text, .article-3__cloud-text,
+    .article-3__first-text-devops, .article-3__second-text-devops, 
+    .article-3__agile-text, .article-3__digital-text {
+        font-size: 14px;
+    }
+    .article-3__images-grid {
+        padding: 37px 45px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 285px);
+        grid-template-rows: auto repeat(6, 350px);
+        grid-template-areas: "projects"
+                             "icon-1" 
+                             "icon-2"
+                             "icon-3" 
+                             "icon-4"
+                             "icon-5" 
+                             "icon-6";
+        grid-gap: 18px;
+    }
+    .article-3__title-projects {
+        margin-bottom: 16px;
+        font-size: 24px;
+    }
+    .footer {
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 310px;
+        grid-template-rows: 514px;
+        grid-template-areas: "form" 
+                             "adress";
+        grid-gap: 0;
+    }
+    .footer__title-form {
+        margin-bottom: 38px;
+        font-size: 24px;
+    }
+    .footer__adress {
+        margin: 0;
+    }
+    .footer__form-name, .footer__form-email, .footer__form-tel {
+        margin-bottom: 12px;
+        font-size: 12px;
+        width: 286px;
+    }
+    .footer__form-textarea {
+        font-size: 12px;
+        width: 259px;
+    }
+    .footer__form-button {
+        width: 308px;
+        font-size: 14px;  
+    }
+    .footer__our-text {
+        margin-bottom: 31px;
     }
 }

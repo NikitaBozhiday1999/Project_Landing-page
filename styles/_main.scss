@@ -213,25 +213,27 @@
     }
     .article-2__icon-1-grid {
         grid-area: icon-1; 
-        .circle {
+        .article-2__circle {
             @extend %circle;
         }
-        .img-svg-1 {
+        .article-2__img-svg-1 {
             position: absolute;
             margin-left: -31px;
             margin-top: -108px;
         }
+        @import 'media';
     }
     .article-2__icon-2-grid {
         grid-area: icon-2;
-        .circle {
+        .article-2__circle {
             @extend %circle;
         }
-        .img-svg-2 {
+        .article-2__img-svg-2 {
             position: absolute;
             margin-left: 88px;
             margin-top: -104px;
         }
+        @import 'media';
     }
     .article-2__maintaining-grid {
         grid-area: maintaining;
@@ -241,25 +243,27 @@
     }
     .article-2__icon-3-grid {
         grid-area: icon-3;
-        .circle {
+        .article-2__circle {
             @extend %circle;
         }
-        .img-svg-3 {
+        .article-2__img-svg-3 {
             position: absolute;
             margin-left: -31px;
             margin-top: -108px;
         }
+        @import 'media';
     }
     .article-2__icon-4-grid {
         grid-area: icon-4;
-        .circle {
+        .article-2__circle {
             @extend %circle;
         }
-        .img-svg-4 {
+        .article-2__img-svg-4 {
             position: absolute;
             margin-left: 88px;
             margin-top: -104px;
         }
+        @import 'media';
     }
     .article-2__pragmatic-grid {
         grid-area: pragmatic;
@@ -269,14 +273,15 @@
     }
     .article-2__icon-5-grid {
         grid-area: icon-5;
-        .circle {
+        .article-2__circle {
             @extend %circle;
         }
-        .img-svg-5 {
+        .article-2__img-svg-5 {
             position: absolute;
             margin-left: -31px;
             margin-top: -108px;
         }
+        @import 'media';
     }
     .article-2__feedback {
         display: flex;
