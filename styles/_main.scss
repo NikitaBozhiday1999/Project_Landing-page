@@ -1,5 +1,6 @@
 %flex {
-    margin-bottom: 19px;
+    padding-top: 80px;
+    padding-bottom: 19px;
     display: flex;
     align-items: flex-end;
     font-weight: bold;
@@ -339,12 +340,11 @@
 }
 .article-3 {
     .article-3__technolologies-grid {
-        margin: 102px 140px;
+        padding: 102px 140px;
         display: grid;
         justify-content: center;
-        height: 100%;
-        grid-template-columns: repeat(3, 360px);
-        grid-template-rows: 144px 50px 3px 200px 50px 3px 300px;
+        grid-template-columns: repeat(3, min-max(350px, 360px));
+        grid-template-rows: auto;
         grid-template-areas: "title title title"
                              "soft auto cloud"
                              "top-line top-line top-line"
@@ -373,6 +373,7 @@
         grid-area: cloud;
     }
     .article-3__top-line {
+        height: 3px;
         grid-area: top-line;
         background: #E75A7C;
         border-radius: 3px;
@@ -402,6 +403,7 @@
         grid-area: digital;
     }
     .article-3__bottom-line {
+        height: 3px;
         grid-area: bottom-line;
         background: #E75A7C;
         border-radius: 3px;

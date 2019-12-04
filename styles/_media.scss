@@ -88,12 +88,12 @@
         width: 295px;
     }
     .article-3__technolologies-grid {
-        margin: 101px 94px 102px 122px;
+        padding: 101px 94px 102px 122px;
         display: grid;
         justify-content: center;
         height: 100%;
-        grid-template-columns: repeat(2, 360px);
-        grid-template-rows: 121px 40px 3px 250px 40px 3px 370px 40px 3px 240px;
+        grid-template-columns: repeat(2, min-max(350px, 370px));
+        grid-template-rows: auto;
         grid-template-areas: "title title"
                              "soft auto "
                              "top-line top-line"
@@ -110,9 +110,14 @@
         font-size: 48px;
     }
     .article-3__bottom-line-3 {
+        height: 3px;
         grid-area: bottom-line-2;
         background: #E75A7C;
         border-radius: 3px;
+    }
+    .article-3__software, .article-3__auto, .article-3__cloud, .article-3__devops,
+    .article-3__agile, .article-3__digital {
+        padding-top: 60px;
     }
     .article-3__images-grid {
         padding: 64px 30px;
@@ -243,12 +248,12 @@
         width: 225px;
     }
     .article-3__technolologies-grid {
-        margin: 72px 73px 72px 87px;
+        padding: 72px 73px 72px 87px;
         display: grid;
         justify-content: center;
         height: 100%;
-        grid-template-columns: repeat(2, 282px);
-        grid-template-rows: 121px 40px 3px 250px 40px 3px 360px 40px 3px 240px;
+        grid-template-columns: repeat(2, min-max(192px, 282px));
+        grid-template-rows: auto;
         grid-template-areas: "title title"
                              "soft auto "
                              "top-line top-line"
@@ -262,6 +267,7 @@
         grid-column-gap: 40px;
     }
     .article-3__bottom-line-3 {
+        height: 3px;
         grid-area: bottom-line-2;
         background: #E75A7C;
         border-radius: 3px;
@@ -271,6 +277,7 @@
     }
     .article-3__software, .article-3__auto, .article-3__cloud, .article-3__devops,
     .article-3__agile, .article-3__digital {
+        padding-top: 60px;
         font-size: 20px;
     }
     .article-3__soft-text, .article-3__auto-text, .article-3__cloud-text,
@@ -456,13 +463,12 @@
         font-size: 16px;
     }
     .article-3__technolologies-grid {
-        margin: 36px 45px 38px 42px;
+        padding: 36px 45px 38px 42px;
         display: grid;
         justify-content: center;
         height: 100%;
-        grid-template-columns: 285px;
-        grid-template-rows: 66px 40px 3px 96px 40px 3px 114px 40px 3px 114px
-                            40px 3px 232px 40px 3px 148px 40px 3px 60px;
+        grid-template-columns: min-max(192px, 285px);
+        grid-template-rows: auto;
         grid-template-areas: "title"
                              "soft" 
                              "top-line"
@@ -484,11 +490,13 @@
                              "digital-text";
     }
     .article-3__bottom-line-3 {
+        height: 3px;
         grid-area: bottom-line-3;
         background: #E75A7C;
         border-radius: 3px;
     }
     .article-3__bottom-line-4, .article-3__bottom-line-5, .article-3__bottom-line-6 {
+        height: 3px;
         background: #E75A7C;
         border-radius: 3px;
     }
@@ -502,11 +510,11 @@
         grid-area: bottom-line-6;
     }
     .article-3__tech-title {
-        margin-bottom: 32px;
         font-size: 28px;
     }
     .article-3__software, .article-3__auto, .article-3__cloud, .article-3__devops,
     .article-3__agile, .article-3__digital {
+        padding-top: 36px;
         font-size: 18px;
     }
     .article-3__soft-text, .article-3__auto-text, .article-3__cloud-text,
