@@ -428,8 +428,8 @@
         background: #F2F3F7;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(3, 360px);
-        grid-template-rows: auto repeat(2, 440px);
+        grid-template-columns: repeat(3, min-max (285px, 360px));
+        grid-template-rows: auto;
         grid-template-areas: "projects . ."
                              "icon-1 icon-2 icon-3"
                              "icon-4 icon-5 icon-6";

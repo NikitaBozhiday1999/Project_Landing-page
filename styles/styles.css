@@ -1083,7 +1083,7 @@
 .article-3 .article-3__devops-text .article-3__second-text-devops { margin-top: 30px; }
 .article-3 .article-3__agile-text { grid-area: agile-text; }
 .article-3 .article-3__digital-text { grid-area: digital-text; }
-.article-3 .article-3__images-grid { padding: 115px 140px; background: #F2F3F7; display: grid; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; grid-template-columns: repeat(3, 360px); grid-template-rows: auto repeat(2, 440px); grid-template-areas: "projects . ." "icon-1 icon-2 icon-3" "icon-4 icon-5 icon-6"; grid-gap: 40px; }
+.article-3 .article-3__images-grid { padding: 115px 140px; background: #F2F3F7; display: grid; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; grid-template-columns: repeat(3, min-max 285px, 360px); grid-template-rows: auto; grid-template-areas: "projects . ." "icon-1 icon-2 icon-3" "icon-4 icon-5 icon-6"; grid-gap: 40px; }
 .article-3 .article-3__title-projects { margin-bottom: 59px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; font-weight: bold; font-size: 50px; grid-area: projects; }
 .article-3 .article-3__icon-1 { grid-area: icon-1; }
 .article-3 .article-3__icon-2 { grid-area: icon-2; }
