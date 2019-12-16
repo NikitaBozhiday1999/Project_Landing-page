@@ -343,7 +343,7 @@
         padding: 102px 140px;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(3, min-max(350px, 360px));
+        grid-template-columns: repeat(3, minmax(50px, 360px));
         grid-template-rows: auto;
         grid-template-areas: "title title title"
                              "soft auto cloud"
@@ -428,7 +428,7 @@
         background: #F2F3F7;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(3, min-max (285px, 360px));
+        grid-template-columns: repeat(3, minmax(250px, 360px));
         grid-template-rows: auto;
         grid-template-areas: "projects . ."
                              "icon-1 icon-2 icon-3"

@@ -92,7 +92,7 @@
         display: grid;
         justify-content: center;
         height: 100%;
-        grid-template-columns: repeat(2, min-max(350px, 370px));
+        grid-template-columns: repeat(2, minmax(50px, 370px));
         grid-template-rows: auto;
         grid-template-areas: "title title"
                              "soft auto "
@@ -124,8 +124,8 @@
         background: #F2F3F7;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(3, 295px);
-        grid-template-rows: auto repeat(2, 361px);
+        grid-template-columns: repeat(3, minmax(240px, 295px));
+        grid-template-rows: auto;
         grid-template-areas: "projects . ."
                              "icon-1 icon-2 icon-3"
                              "icon-4 icon-5 icon-6";
@@ -252,7 +252,7 @@
         display: grid;
         justify-content: center;
         height: 100%;
-        grid-template-columns: repeat(2, min-max(192px, 282px));
+        grid-template-columns: repeat(2, minmax(50px, 282px));
         grid-template-rows: auto;
         grid-template-areas: "title title"
                              "soft auto "
@@ -289,8 +289,8 @@
         padding: 72px 88px;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(2, 285px);
-        grid-template-rows: auto repeat(3, 350px);
+        grid-template-columns: repeat(2, minmax(240px, 285px));
+        grid-template-rows: auto;
         grid-template-areas: "projects ."
                              "icon-1 icon-2"
                              "icon-3 icon-4"
@@ -467,7 +467,7 @@
         display: grid;
         justify-content: center;
         height: 100%;
-        grid-template-columns: min-max(192px, 285px);
+        grid-template-columns: minmax(50px, 285px);
         grid-template-rows: auto;
         grid-template-areas: "title"
                              "soft" 
@@ -526,8 +526,8 @@
         padding: 37px 45px;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(1, 285px);
-        grid-template-rows: auto repeat(6, 350px);
+        grid-template-columns: repeat(1, minmax(240px, 285px));
+        grid-template-rows: auto;
         grid-template-areas: "projects"
                              "icon-1" 
                              "icon-2"
