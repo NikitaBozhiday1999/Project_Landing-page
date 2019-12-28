@@ -36,6 +36,12 @@
             border-radius: 4px;
             border: none;
         }
+        .form_field-error {
+            border: solid 2px rgba(199, 6, 6, 0.973);
+        }
+        .form_field-success {
+            border: solid 2px rgba(3, 196, 19, 0.7);
+        }
         .footer__form-textarea {
             padding: 19px 24px;
             height: 139px;
