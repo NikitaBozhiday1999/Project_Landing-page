@@ -1,38 +1,39 @@
 @media (min-width: 768px) and (max-width: 980px) {
+    .header {
+        overflow: hidden;
+    }
     .header__nav-list {
         margin: 0;
         position: absolute;
+        top: 60px;
+        right: -200px;
         background-color: rgba($color: #4D636F, $alpha: 0.7);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: 200px;
         height: 250px;
-        transform: translateX(977px) translateY(60px);
-        z-index: 2;
+        transition: 0.5s ease-in-out;
+        z-index: 10;
     }
-    .header__nav-list--active {
-        transform: translateX(777px) translateY(60px);
+    .header__nav-list--active--open {
+        position: absolute;
+        right: 0;
+        top: 60px;
         transition: 0.5s ease-in-out;
         box-shadow: -4px 2px 6px gray;
+        z-index: 12;
     }
-    .header__nav-mini {
+    .header__drop-down-menu {
         display: block;
-        top: 0;
-        right: 0;
     }
-    .header__nav--stick-1 {
-        margin-top: 21px;
-        margin-right: 20px;
-    }
-    .header__nav--stick-2 {
-        margin-top: 28px;
-        margin-right: 20px;
-    }
-    .header__nav--stick-3 {
-        margin-top: 35px;
-        margin-right: 20px;
-    }
+
+.header__drop-down-menu--item {
+    height: 2px;
+    width: 26px;
+    background-color: white;
+    margin-bottom: 6px;
+}
     .article-1__title {
         margin-left: 332px;
         margin-bottom: 32px;
@@ -157,25 +158,37 @@
     }
 } 
 @media (min-width: 500px) and (max-width: 768px) {
-    .header__nav-items {
-        display: none;
+    .header {
+        overflow: hidden;
     }
-    .header__nav-mini {
+    .header__drop-down-menu {
         display: block;
-        top: 0;
+    }
+    .header__nav-list {
+        margin: 0;
+        position: absolute;
+        top: 60px;
+        right: -200px;
+        background-color: rgba($color: #4D636F, $alpha: 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 200px;
+        height: 250px;
+        transition: 0.5s ease-in-out;
+        z-index: 10;
+    }
+    .header__nav-list--active--open {
         right: 0;
+        top: 60px;
+        transition: 0.5s ease-in-out;
+        box-shadow: -4px 2px 6px gray;
     }
-    .header__nav--stick-1 {
-        margin-top: 21px;
-        margin-right: 20px;
-    }
-    .header__nav--stick-2 {
-        margin-top: 28px;
-        margin-right: 20px;
-    }
-    .header__nav--stick-3 {
-        margin-top: 35px;
-        margin-right: 20px;
+    .header__drop-down-menu--item {
+        height: 2px;
+        width: 26px;
+        background-color: white;
+        margin-bottom: 6px;
     }
     .article-1__logo-title {
         margin-bottom: 160px;
@@ -351,25 +364,37 @@
         background: #E75A7C;
         opacity: 0.2;
     }
-    .header__nav-items {
-        display: none;
+    .header {
+        overflow: hidden;
     }
-    .header__nav-mini {
+    .header__nav-list {
+        margin: 0;
+        position: absolute;
+        top: 60px;
+        right: -200px;
+        background-color: rgba($color: #4D636F, $alpha: 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 200px;
+        height: 250px;
+        transition: 0.5s ease-in-out;
+        z-index: 10;
+    }
+    .header__drop-down-menu {
         display: block;
-        top: 0;
+    }
+    .header__nav-list--active--open {
         right: 0;
+        top: 60px;
+        transition: 0.5s ease-in-out;
+        box-shadow: -4px 2px 6px gray;
     }
-    .header__nav--stick-1 {
-        margin-top: 21px;
-        margin-right: 20px;
-    }
-    .header__nav--stick-2 {
-        margin-top: 28px;
-        margin-right: 20px;
-    }
-    .header__nav--stick-3 {
-        margin-top: 35px;
-        margin-right: 20px;
+    .header__drop-down-menu--item {
+        height: 2px;
+        width: 26px;
+        background-color: white;
+        margin-bottom: 6px;
     }
     .article-1__logo-title {
         font-size: 24px;

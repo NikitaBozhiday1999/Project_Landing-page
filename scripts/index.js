@@ -1,9 +1,9 @@
-let menuIcon = document.querySelector('.header__nav-mini');
+let menuIcon = document.querySelector('.header__drop-down-menu');
 let headerNavList = document.querySelector('.header__nav-list');
 
 // выдвигает меню
 menuIcon.addEventListener('click', function(event) {
-    headerNavList.classList.add('header__nav-list--active');
+    headerNavList.classList.toggle('header__nav-list--active--open');
 });
 
 // закрывает меню
@@ -89,7 +89,7 @@ userEmail.addEventListener('input', function(event) {
 
 let line = document.getElementById('header__progress-line');
 window.addEventListener('scroll', progressBar);
-       
+         
 function progressBar(e) {
    let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
