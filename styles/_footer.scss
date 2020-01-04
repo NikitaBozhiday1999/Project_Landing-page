@@ -1,6 +1,6 @@
 .footer {
     display: grid;
-    grid-template-columns: 524px 140px;
+    grid-template-columns:s minmax(160px, 500px);
     grid-template-rows: 620px;
     grid-template-areas: "form adress";
     justify-content: center;
@@ -19,7 +19,6 @@
     .footer__form {
         display: flex;
         flex-direction: column;
-        margin-right: 160px;
         .footer__title-form {
             margin-bottom: 48px;
             font-weight: 900;
@@ -36,6 +35,9 @@
             border-radius: 4px;
             border: none;
         }
+        .footer__form-name:focus, .footer__form-email:focus, .footer__form-tel:focus {
+            background-color: #dfd3d3;
+        }
         .form_field-error {
             border: solid 2px rgba(199, 6, 6, 0.973);
         }
@@ -46,15 +48,18 @@
             padding: 19px 24px;
             height: 139px;
             font-size: 14px;
-            width: 474px;
+            width: 500px;
             background: #F2F3F7;
             border-radius: 4px;
             resize: none;
         }
+        .footer__form-textarea:focus {
+            background-color: #dfd3d3;
+        }
         .footer__form-button {
             margin-top: 18px;
             height: 49px;
-            width: 524px;
+            width: 500px;
             background: #E75A7C;
             border-radius: 6px;
             font-weight: bold;
@@ -100,6 +105,7 @@
             color: #ffffff;
         }
         .footer__office-text {
+            margin-top: 32px;
             font-size: 18px;
             font-weight: bold;
             color: #ffffff;

@@ -28,7 +28,6 @@
     overflow: hidden;
 }
 %hover {
-    cursor: pointer;
     display: block;
     top: 0;
 }
@@ -76,24 +75,22 @@
         @import 'media';
     }
     .article-1__paragraph {
+        padding: 70px 240px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 358px;
         background: #F2F3F7;
         background-position: center;
     } 
     .article-1__title {
-        margin-top: 60px;
-        margin-bottom: 29px;
+        padding-bottom: 30px;
         width: 961px;
         font-weight: bold;
         font-size: 50px;
         color: #3B424A;
     }
     .article-1__text {
-        margin-bottom: 70px;
         width: 961px;
         font-size: 24px;
         line-height: 36px;
@@ -124,7 +121,7 @@
     .article-1__stat-text-1, .article-1__stat-text-2, 
     .article-1__stat-text-3, .article-1__stat-text-4 {
         margin-top: 18px;
-        font-weight: normal;
+        font-weight: 300;
         font-size: 24px;
         color: #FFFFFF;
     }
@@ -140,36 +137,6 @@
     .article-1__stat-numb-4 {
         grid-area: three-plus;
     }
-    // .article-1__statistic {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     height: 277px;
-    //     background: #4D636F;
-    // }
-    // .article-1__stat-list {
-    //     margin-bottom: 18px;
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: space-around;
-    //     align-items: center;
-    //     list-style-type: none;
-    //     color: #FFFFFF;
-    //     font-weight: 900;
-    //     font-size: 50px;
-    //     text-align: center;
-    //     .article-1__stat-numb {
-    //         color: #FFFFFF;
-    //     }
-    //     .article-1__stat-text {
-    //         margin-top: 18px;
-    //         font-weight: normal;
-    //         list-style-type: none;
-    //         font-size: 24px;
-    //         color: #FFFFFF;
-    //     } 
-    //     @import 'media';
-    // }
     @import 'media';
 }
 .article-2 {
@@ -181,7 +148,6 @@
         justify-content: center;
         justify-items: center;
         align-items: center;
-        height: 100%;
         grid-template-columns: repeat(2, 460px);
         grid-template-rows: 190px repeat(5, 220px);
         grid-template-areas: "title ."
@@ -213,26 +179,28 @@
         grid-area: change;
     }
     .article-2__icon-1-grid {
+        position: relative;
         grid-area: icon-1; 
         .article-2__circle {
             @extend %circle;
         }
         .article-2__img-svg-1 {
             position: absolute;
-            margin-left: -31px;
-            margin-top: -108px;
+            left: -30px;
+            top: 28px
         }
         @import 'media';
     }
     .article-2__icon-2-grid {
+        position: relative;
         grid-area: icon-2;
         .article-2__circle {
             @extend %circle;
         }
         .article-2__img-svg-2 {
             position: absolute;
-            margin-left: 88px;
-            margin-top: -104px;
+            left: 87px;
+            top: 28px;
         }
         @import 'media';
     }
@@ -244,25 +212,27 @@
     }
     .article-2__icon-3-grid {
         grid-area: icon-3;
+        position: relative;
         .article-2__circle {
             @extend %circle;
         }
         .article-2__img-svg-3 {
             position: absolute;
-            margin-left: -31px;
-            margin-top: -108px;
+            left: -30px;
+            top: 28px;
         }
         @import 'media';
     }
     .article-2__icon-4-grid {
+        position: relative;
         grid-area: icon-4;
         .article-2__circle {
             @extend %circle;
         }
         .article-2__img-svg-4 {
             position: absolute;
-            margin-left: 88px;
-            margin-top: -104px;
+            left: 87px;
+            top: 28px;
         }
         @import 'media';
     }
@@ -273,14 +243,15 @@
         grid-area: corporate;
     }
     .article-2__icon-5-grid {
+        position: relative;
         grid-area: icon-5;
         .article-2__circle {
             @extend %circle;
         }
         .article-2__img-svg-5 {
             position: absolute;
-            margin-left: -31px;
-            margin-top: -108px;
+            left: -30px;
+            top: 28px
         }
         @import 'media';
     }
@@ -426,6 +397,7 @@
     .article-3__images-grid {
         padding: 115px 140px;
         background: #F2F3F7;
+        cursor: pointer;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(3, minmax(250px, 360px));

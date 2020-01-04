@@ -33,17 +33,25 @@
         display: inline-block;
         color: #FFFFFF;
         text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-        &:focus {
-            color: #A1C5D9;
-        }
-        &:active {
-            color: #FFFFFF;
-            text-decoration: underline;
-        }
-    } 
+    }
+
+    .header__link::after {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0%;
+        background-color: #FFFFFF;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .header__link:focus {
+        color: #A1C5D9;
+    }
+    .header__link:hover:after,
+    .header__link:active:after {
+        width: 100%;
+    }
+
     .header__drop-down-menu {
         display: none;
         position: absolute;

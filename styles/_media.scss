@@ -1,6 +1,9 @@
 @media (min-width: 768px) and (max-width: 980px) {
     .header {
-        overflow: hidden;
+        // overflow: hidden;
+    }
+    .header__name {
+        margin: 15px 20px;
     }
     .header__nav-list {
         margin: 0;
@@ -28,15 +31,21 @@
         display: block;
     }
 
-.header__drop-down-menu--item {
-    height: 2px;
-    width: 26px;
-    background-color: white;
-    margin-bottom: 6px;
-}
+    .header__drop-down-menu--item {
+        height: 2px;
+        width: 26px;
+        background-color: white;
+        margin-bottom: 6px;
+    }
+
+    .article-1__paragraph {
+        padding: 50px 177px;
+        height: 390px;
+    }
+
     .article-1__title {
-        margin-left: 332px;
-        margin-bottom: 32px;
+        padding-bottom: 32px;
+        width: 627px;
         font-size: 36px;
     }
     .article-1__text {
@@ -161,6 +170,9 @@
     .header {
         overflow: hidden;
     }
+    .header__name {
+        margin: 15px 18px;
+    }
     .header__drop-down-menu {
         display: block;
     }
@@ -199,10 +211,12 @@
         width: 529px;
         height: 74px;
     }
+    .article-1__paragraph {
+        padding: 40px 90px;
+    }
     .article-1__title {
-        margin-top: 39px;
-        margin-bottom: 18px;
-        margin-left: 355px;
+        padding-bottom: 18px;
+        width: 610px;
         font-size: 36px;
     }
     .article-1__text {
@@ -367,6 +381,9 @@
     .header {
         overflow: hidden;
     }
+    .header__name {
+        margin: 15px 16px;
+    }
     .header__nav-list {
         margin: 0;
         position: absolute;
@@ -400,35 +417,42 @@
         font-size: 24px;
     }
     .article-1__logo-text {
+        line-height: 28px;
         width: 345px;
         font-size: 16px;
     }
+    .article-1__paragraph {
+        padding: 53px 37px;
+    }
     .article-1__title {
-        margin: 53px 0 0 640px;
+        padding-bottom: 15px;
+        width: 320px;
         font-size: 24px;
     }
     .article-1__text {
-        margin: 15px 37px 54px;
+        line-height: 26px;
         font-size: 14px;
         line-height: 26px;
         width: 320px;
     }
     .article-1__statistic {
-        height: 623px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 506px;
     }
     .article-1__stat-list {
-        padding: 50px;
+        margin: 0;
+        padding: 0;
         display: grid;
-        justify-content: center;
-        grid-template-rows: 100px;
-        grid-template-columns: 150px;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
         grid-template-areas: "seven-plus" 
                              "five-plus" 
                              "dolor" 
                              "three-plus";
         font-size: 36px;
-        line-height: 45px;
-        grid-gap: 30px;
+        grid-row-gap: 30px;
     }
     .article-1__stat-numb-1, .article-1__stat-numb-2, 
     .article-1__stat-numb-3, .article-1__stat-numb-4 {
@@ -436,6 +460,7 @@
     }
     .article-1__stat-text-1, .article-1__stat-text-2, 
     .article-1__stat-text-3, .article-1__stat-text-4 {
+        margin-top: 12px;
         font-size: 18px;
     }
     .article-2__approach-grid {
@@ -465,6 +490,7 @@
             margin-bottom: 16px;
         }
         .article-2__text {
+            line-height: 26px;
             font-size: 14px;
         }
         .article-2__title-grid { 
@@ -477,12 +503,12 @@
         width: 50px;
     } 
     .article-2__img-svg-1, .article-2__img-svg-3, .article-2__img-svg-5 {
-        margin-left: -20px;
-        margin-top: -70px;
+        left: -22px;
+        top: 17px;
     }
     .article-2__img-svg-2, .article-2__img-svg-4 {
-        margin-left: 56px;
-        margin-top: -68px;
+        left: 58px;
+        top: 17px;;
     }
     .article-2__feedback {
         height: 375px;
@@ -492,6 +518,7 @@
         font-size: 24px;
     }
     .article-2__text-feedback {
+        line-height: 23px;
         width: 286px;
         font-size: 18px;
     }
@@ -559,6 +586,7 @@
     .article-3__soft-text, .article-3__auto-text, .article-3__cloud-text,
     .article-3__first-text-devops, .article-3__second-text-devops, 
     .article-3__agile-text, .article-3__digital-text {
+        line-height: 26px;
         font-size: 14px;
     }
     .article-3__images-grid {
@@ -583,7 +611,7 @@
     .footer {
         height: 1000px;
         display: grid;
-        grid-template-columns: 310px;
+        grid-template-columns: 286px;
         grid-template-rows: 514px;
         grid-template-areas: "form" 
                              "adress";
@@ -603,10 +631,10 @@
     }
     .footer__form-textarea {
         font-size: 12px;
-        width: 259px;
+        width: 286px;
     }
     .footer__form-button {
-        width: 308px;
+        width: 286px;
         font-size: 14px;  
     }
     .footer__our-text {
