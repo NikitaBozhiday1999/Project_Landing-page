@@ -27,8 +27,6 @@ window.addEventListener('keydown', function (event) {
 
 // Валидация поля ввода Имени
 
-// let userName = document.forms.contacts-form.elements.userName;
-
 let userName = document.querySelector('.footer__form-name');
 
 userName.addEventListener('input', function(event) {

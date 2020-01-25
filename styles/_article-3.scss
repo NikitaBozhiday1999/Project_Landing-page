@@ -1,0 +1,475 @@
+.article-3 {
+    .article-3__technolologies-grid {
+        padding: 102px 140px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, minmax(50px, 360px));
+        grid-template-rows: auto;
+        grid-template-areas: "title title title"
+                             "soft auto cloud"
+                             "top-line top-line top-line"
+                             "soft-text auto-text cloud-text"
+                             "devops agile digital"
+                             "bottom-line bottom-line bottom-line"
+                             "devops-text agile-text digital-text";
+        grid-column-gap: 40px;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            padding: 101px 94px 102px 122px;
+            height: 100%;
+            grid-template-columns: repeat(2, minmax(50px, 370px));
+            grid-template-areas: "title title"
+                                "soft auto "
+                                "top-line top-line"
+                                "soft-text auto-text"
+                                "cloud devops"
+                                "bottom-line bottom-line"
+                                "cloud-text devops-text"
+                                "agile digital"
+                                "bottom-line-2 bottom-line-2"
+                                "agile-text digital-text";
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            padding: 72px 73px 72px 87px;
+            display: grid;
+            justify-content: center;
+            height: 100%;
+            grid-template-columns: repeat(2, minmax(50px, 282px));
+            grid-template-rows: auto;
+            grid-template-areas: "title title"
+                                "soft auto "
+                                "top-line top-line"
+                                "soft-text auto-text"
+                                "cloud devops"
+                                "bottom-line bottom-line"
+                                "cloud-text devops-text"
+                                "agile digital"
+                                "bottom-line-2 bottom-line-2"
+                                "agile-text digital-text";
+        }
+
+        @media (max-width: 500px) {
+            padding: 36px 45px 38px 42px;
+            height: 100%;
+            grid-template-columns: minmax(50px, 285px);
+            grid-template-areas: "title"
+                                "soft" 
+                                "top-line"
+                                "soft-text"
+                                "auto "
+                                "bottom-line"
+                                "auto-text"
+                                "cloud" 
+                                "bottom-line-3"
+                                "cloud-text"
+                                "devops"
+                                "bottom-line-4"
+                                "devops-text"
+                                "agile" 
+                                "bottom-line-5"
+                                "agile-text"
+                                "digital"
+                                "bottom-line-6"
+                                "digital-text";
+        }
+    }
+    .article-3__tech-title {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 50px;
+        color: #2C2F3C;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            font-size: 48px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 28px;
+        }
+    }
+    .article-3__software {
+        @extend %flex;
+        grid-area: soft;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            padding-top: 60px;
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            padding-top: 60px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            padding-top: 36px;
+            font-size: 18px;
+        }
+    }
+    .article-3__auto {
+        @extend %flex;
+        grid-area: auto;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            padding-top: 60px;
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            padding-top: 60px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            padding-top: 36px;
+            font-size: 18px;
+        }
+    }
+    .article-3__cloud {
+        @extend %flex;
+        grid-area: cloud;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            padding-top: 60px;
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            padding-top: 60px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            padding-top: 36px;
+            font-size: 18px;
+        }
+    }
+    .article-3__top-line {
+        height: 3px;
+        grid-area: top-line;
+        background: #E75A7C;
+        border-radius: 3px;
+    }
+    .article-3__soft-text {
+        @extend %margin;
+        grid-area: soft-text;
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            font-size: 20px
+        }
+
+        @media (max-width: 500px) {
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+    .article-3__auto-text {
+        @extend %margin;
+        grid-area: auto-text;
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            font-size: 20px
+        }
+
+        @media (max-width: 500px) {
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+    .article-3__cloud-text {
+        @extend %margin;
+        grid-area: cloud-text;
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            font-size: 20px
+        }
+
+        @media (max-width: 500px) {
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+    .article-3__devops {
+        @extend %flex;
+        grid-area: devops;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            padding-top: 60px;
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            padding-top: 60px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            padding-top: 36px;
+            font-size: 18px;
+        }
+    }
+    .article-3__agile {
+        @extend %flex;
+        grid-area: agile;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            padding-top: 60px;
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            padding-top: 60px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            padding-top: 36px;
+            font-size: 18px;
+        }
+    }
+    .article-3__digital {
+        @extend %flex;
+        grid-area: digital;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            padding-top: 60px;
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            padding-top: 60px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            padding-top: 36px;
+            font-size: 18px;
+        }
+    }
+    .article-3__bottom-line {
+        height: 3px;
+        grid-area: bottom-line;
+        background: #E75A7C;
+        border-radius: 3px;
+    }
+    .article-3__devops-text {
+        @extend %margin;
+        grid-area: devops-text;
+        .article-3__second-text-devops {
+            margin-top: 30px;
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+           font-size: 20px
+        }
+
+        @media (max-width: 500px) {
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+    .article-3__agile-text {
+        @extend %margin;
+        grid-area: agile-text;
+
+        @media (min-width: 500px) and (max-width: 768px) {
+           font-size: 20px
+        }
+
+        @media (max-width: 500px) {
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+    .article-3__digital-text {
+        @extend %margin;
+        grid-area: digital-text;
+
+        @media (min-width: 500px) and (max-width: 768px) {
+           font-size: 20px
+        }
+
+        @media (max-width: 500px) {
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 980px) {
+        .article-3__bottom-line-3 {
+            height: 3px;
+            grid-area: bottom-line-2;
+            background: #E75A7C;
+            border-radius: 3px;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width: 768px) {
+        .article-3__bottom-line-3 {
+            height: 3px;
+            grid-area: bottom-line-2;
+            background: #E75A7C;
+            border-radius: 3px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .article-3__bottom-line-3 {
+            height: 3px;
+            grid-area: bottom-line-3;
+            background: #E75A7C;
+            border-radius: 3px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .article-3__bottom-line-4, .article-3__bottom-line-5, .article-3__bottom-line-6 {
+            height: 3px;
+            background: #E75A7C;
+            border-radius: 3px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .article-3__bottom-line-4 {
+        grid-area: bottom-line-4;
+        }
+        .article-3__bottom-line-5 {
+            grid-area: bottom-line-5;
+        }
+        .article-3__bottom-line-6 {
+            grid-area: bottom-line-6;
+        }
+    }
+
+    .article-3__images-grid {
+        padding: 115px 140px;
+        background: #F2F3F7;
+        cursor: pointer;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, minmax(250px, 360px));
+        grid-template-rows: auto;
+        grid-template-areas: "projects . ."
+                             "icon-1 icon-2 icon-3"
+                             "icon-4 icon-5 icon-6";
+        grid-gap: 40px;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            padding: 64px 30px;;
+            grid-template-columns: repeat(3, minmax(240px, 295px));
+            grid-gap: 18px;
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            padding: 72px 88px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(240px, 285px));;
+            grid-template-areas: "projects ."
+                                "icon-1 icon-2"
+                                "icon-3 icon-4"
+                                "icon-5 icon-6";
+            grid-gap: 18px;
+        }
+
+        @media (max-width: 500px) {
+            padding: 37px 45px;
+            grid-template-columns: repeat(1, minmax(240px, 285px));
+            grid-template-areas: "projects"
+                                "icon-1" 
+                                "icon-2"
+                                "icon-3" 
+                                "icon-4"
+                                "icon-5" 
+                                "icon-6";
+            grid-gap: 18px;
+        }
+    }
+    .article-3__title-projects {
+        margin-bottom: 59px;
+        display: flex;
+        align-items: flex-end;
+        font-weight: bold;
+        font-size: 50px;
+        grid-area: projects;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            margin-bottom: 16px;
+            font-size: 48px;
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            margin-bottom: 16px;
+            font-size: 48px;
+        }
+
+        @media (max-width: 500px) {
+            margin-bottom: 16px;
+            font-size: 24px;
+        }
+    }
+    .article-3__icon-1 {
+        grid-area: icon-1;
+        @extend %pos-overflow;
+        &:hover .article-3__descr-1 {
+            @extend %hover;
+        }
+    }
+    .article-3__icon-2 {
+        grid-area: icon-2;
+        @extend %pos-overflow;
+        &:hover .article-3__descr-2 {
+            @extend %hover;
+        }
+    }
+    .article-3__icon-3 {
+        grid-area: icon-3;
+        @extend %pos-overflow;
+        &:hover .article-3__descr-3 {
+            @extend %hover;
+        }
+    }
+    .article-3__icon-4 {
+        grid-area: icon-4;
+        @extend %pos-overflow;
+        @extend %pos-overflow;
+        &:hover .article-3__descr-4 {
+            @extend %hover;
+        }
+    }
+    .article-3__icon-5 {
+        grid-area: icon-5;
+        @extend %pos-overflow;
+        @extend %pos-overflow;
+        &:hover .article-3__descr-5 {
+            @extend %hover;
+        }
+    }
+    .article-3__icon-6 {
+        grid-area: icon-6;
+        @extend %pos-overflow;
+        @extend %pos-overflow;
+        &:hover .article-3__descr-6 {
+            @extend %hover;
+        }
+    }
+    .article-3__descr-1, .article-3__descr-2, 
+    .article-3__descr-3, .article-3__descr-4, 
+    .article-3__descr-5, .article-3__descr-6 {
+        @extend %description;
+    }
+    .article-3__descr-title {
+        padding: 360px 24px 4px;
+        font-weight: bold;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        @media (min-width: 768px) and (max-width: 980px) {
+            padding: 370px 23px 3px;
+        }
+    }
+    .article-3__descr-text {
+        color: #FFFFFF;
+        font-size: 16px;
+        margin: 4px 24px 0;
+    }
+
+    
+    @import 'media';
+}

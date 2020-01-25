@@ -24,6 +24,11 @@
             font-weight: 900;
             font-size: 50px;
             color: #ffffff;
+
+            @media (max-width: 500px) {
+                margin-bottom: 38px;
+                font-size: 24px;
+            }
         }
         .footer__form-name, .footer__form-email, .footer__form-tel {
             margin-bottom: 30px;
@@ -34,6 +39,12 @@
             background: #F2F3F7;
             border-radius: 4px;
             border: none;
+
+            @media (max-width: 500px) {
+                margin-bottom: 12px;
+                font-size: 12px;
+                width: 286px;
+            }
         }
         .footer__form-name:focus, .footer__form-email:focus, .footer__form-tel:focus {
             background-color: #dfd3d3;
@@ -52,6 +63,11 @@
             background: #F2F3F7;
             border-radius: 4px;
             resize: none;
+
+            @media (max-width: 500px) {
+                font-size: 12px;
+                width: 286px;
+            }
         }
         .footer__form-textarea:focus {
             background-color: #dfd3d3;
@@ -66,6 +82,11 @@
             font-size: 16px;  
             color: #ffffff; 
             border: none; 
+
+            @media (max-width: 500px) {
+                width: 286px;
+                font-size: 14px;
+            }
         }
         .footer__form-button:hover {
             cursor: pointer;
@@ -91,15 +112,47 @@
     .footer__adress {
         display: flex;
         flex-direction: column;
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (max-width: 500px) {
+            margin: 0;
+        }
         .footer__our-text {
             color: #ffffff;
             font-weight: bold;
             font-size: 24px;
+
+            @media (min-width: 500px) and (max-width: 768px) {
+                margin-bottom: 31px;
+            }
+
+            @media (max-width: 500px) {
+                margin-bottom: 31px;
+            }
         }
         .footer__office-1, .footer__office-2 {
             margin-top: 32px;
-            list-style-type: none;
+            list-style-type: none; 
         }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            .footer__office-1 {
+                width: 240px;
+            }
+            .footer__office-2 {
+                margin-left: 63px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+        }
+      
         .footer__item-info {
             font-size: 18px;
             color: #ffffff;
@@ -111,6 +164,27 @@
             color: #ffffff;
             margin-bottom: 24px;
         }
+    }
+
+    @media (min-width: 768px) and (max-width: 980px) {
+        grid-column-gap: 100px;
+    }
+
+    @media (min-width: 500px) and (max-width: 768px) {
+        height: 1000px;
+        grid-template-columns: 524px;
+        grid-template-rows: 622px;
+        grid-template-areas: "form" 
+                             "adress";
+    }
+
+    @media (max-width: 500px) {
+        height: 1000px;
+        grid-template-columns: 286px;
+        grid-template-rows: 514px;
+        grid-template-areas: "form" 
+                             "adress";
+        grid-gap: 0;
     }
     @import 'media';
 }
